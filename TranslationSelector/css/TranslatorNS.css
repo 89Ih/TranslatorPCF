@@ -1,0 +1,10 @@
+.w-full {
+  width: 100%;
+}
+._occ {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.control-container {
+  border: unset !important;
+}

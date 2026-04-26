@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const products = [
+            { value: "كمبيوتر محمول;Laptop;Laptop;Ordinateur portable" },
+            { value: "شاشة LCD;LCD-Monitor;LCD Monitor;Moniteur LCD" },
+            { value: "شاشة LED;LED-Monitor;LED Monitor;Moniteur LED" },
+            { value: "Notebook;Notebook;Notebook;Carnet de notes" },
+            { value: "لوحة مفاتيح سلكية;Kabelgebundene Tastatur;Wired keyboard;Clavier filaire" },
+            { value: "فأرة سلكية;Kabelgebundene Maus;Wired mouse;Souris filaire" },
+            { value: "لوحة مفاتيح لاسلكية;Kabellose Tastatur;Wireless keyboard;Clavier sans fil" },
+            { value: "فأرة لاسلكية;Kabellose Maus;Wireless mouse;Souris sans fil" },
+        ];
+
+        const accountLanguage = 1036;
+
+        const values = [1025, 1031, 1033, 1036];
+
+        // Find index of selected language
+        const langIndex = values.findIndex(v => v === accountLanguage);
+
+        // Map correct translation
+        const result = products.map(p => ({
+            transformed: p.value.split(";")[langIndex]
+        }));
+        const lxx = ["Produkt von heute", "1", "d"];
+        const dis = lxx.join(";")
+        console.log(dis);
+    </script>
+</body>
+
+</html>
