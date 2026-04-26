@@ -1,3 +1,4 @@
+/// <reference types="powerapps-component-framework" />
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
 import Selector, { ISelector } from "./Selector";
 import * as React from "react";
